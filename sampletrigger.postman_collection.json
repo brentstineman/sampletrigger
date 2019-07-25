@@ -1,0 +1,33 @@
+{
+	"info": {
+		"_postman_id": "65e209ed-2ca1-414d-bd30-d11229c9b8ba",
+		"name": "sampletrigger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "local submit job",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\r\n            \"tasks\" :  [\r\n            \t\"mytask\", \"anothertask\"\r\n            ],\r\n\r\n            \"filepath\" : \"mypath\",\r\n\r\n            \"version\" : \"v0.0.1\"\r\n        }"
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/SubmitJob",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"SubmitJob"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
